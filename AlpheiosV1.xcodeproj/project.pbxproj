@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78A9761B21356FB2005BD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9761A21356FB2005BD2E5 /* AppDelegate.swift */; };
+		78A9761D21356FB3005BD2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A9761C21356FB3005BD2E5 /* Assets.xcassets */; };
+		78A9762021356FB3005BD2E5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A9761E21356FB3005BD2E5 /* MainMenu.xib */; };
+		78A9762F21356FD6005BD2E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A9762E21356FD6005BD2E5 /* Cocoa.framework */; };
+		78A9763221356FD6005BD2E5 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9763121356FD6005BD2E5 /* SafariExtensionHandler.swift */; };
+		78A9763421356FD6005BD2E5 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9763321356FD6005BD2E5 /* SafariExtensionViewController.swift */; };
+		78A9763721356FD6005BD2E5 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A9763521356FD6005BD2E5 /* SafariExtensionViewController.xib */; };
+		78A9763A21356FD6005BD2E5 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 78A9763921356FD6005BD2E5 /* script.js */; };
+		78A9764021356FD6005BD2E5 /* AlpheiosSafariV1.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 78A9762C21356FD6005BD2E5 /* AlpheiosSafariV1.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78A9764621357002005BD2E5 /* alpheios_16.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78A9764521357002005BD2E5 /* alpheios_16.pdf */; };
+		78A9764821357615005BD2E5 /* Black_Cat_Vector.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78A9764721357615005BD2E5 /* Black_Cat_Vector.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78A9763E21356FD6005BD2E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78A9760F21356FB2005BD2E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78A9762B21356FD6005BD2E5;
+			remoteInfo = AlpheiosSafariV1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78A9764421356FD6005BD2E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				78A9764021356FD6005BD2E5 /* AlpheiosSafariV1.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		78A9761721356FB2005BD2E5 /* AlpheiosV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpheiosV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A9761A21356FB2005BD2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78A9761C21356FB3005BD2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A9761F21356FB3005BD2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		78A9762121356FB3005BD2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A9762221356FB3005BD2E5 /* AlpheiosV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlpheiosV1.entitlements; sourceTree = "<group>"; };
+		78A9762C21356FD6005BD2E5 /* AlpheiosSafariV1.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlpheiosSafariV1.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A9762E21356FD6005BD2E5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		78A9763121356FD6005BD2E5 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		78A9763321356FD6005BD2E5 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		78A9763621356FD6005BD2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		78A9763821356FD6005BD2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A9763921356FD6005BD2E5 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		78A9763D21356FD6005BD2E5 /* AlpheiosSafariV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlpheiosSafariV1.entitlements; sourceTree = "<group>"; };
+		78A9764521357002005BD2E5 /* alpheios_16.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = alpheios_16.pdf; path = ../../alpheios_16.pdf; sourceTree = "<group>"; };
+		78A9764721357615005BD2E5 /* Black_Cat_Vector.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Black_Cat_Vector.pdf; path = ../../../../../Downloads/Black_Cat_Vector.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A9761421356FB2005BD2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A9762921356FD6005BD2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A9762F21356FD6005BD2E5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78A9760E21356FB2005BD2E5 = {
+			isa = PBXGroup;
+			children = (
+				78A9761921356FB2005BD2E5 /* AlpheiosV1 */,
+				78A9763021356FD6005BD2E5 /* AlpheiosSafariV1 */,
+				78A9762D21356FD6005BD2E5 /* Frameworks */,
+				78A9761821356FB2005BD2E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78A9761821356FB2005BD2E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A9761721356FB2005BD2E5 /* AlpheiosV1.app */,
+				78A9762C21356FD6005BD2E5 /* AlpheiosSafariV1.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A9761921356FB2005BD2E5 /* AlpheiosV1 */ = {
+			isa = PBXGroup;
+			children = (
+				78A9761A21356FB2005BD2E5 /* AppDelegate.swift */,
+				78A9761C21356FB3005BD2E5 /* Assets.xcassets */,
+				78A9761E21356FB3005BD2E5 /* MainMenu.xib */,
+				78A9762121356FB3005BD2E5 /* Info.plist */,
+				78A9762221356FB3005BD2E5 /* AlpheiosV1.entitlements */,
+			);
+			path = AlpheiosV1;
+			sourceTree = "<group>";
+		};
+		78A9762D21356FD6005BD2E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78A9762E21356FD6005BD2E5 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78A9763021356FD6005BD2E5 /* AlpheiosSafariV1 */ = {
+			isa = PBXGroup;
+			children = (
+				78A9764721357615005BD2E5 /* Black_Cat_Vector.pdf */,
+				78A9763121356FD6005BD2E5 /* SafariExtensionHandler.swift */,
+				78A9763321356FD6005BD2E5 /* SafariExtensionViewController.swift */,
+				78A9763521356FD6005BD2E5 /* SafariExtensionViewController.xib */,
+				78A9763821356FD6005BD2E5 /* Info.plist */,
+				78A9763921356FD6005BD2E5 /* script.js */,
+				78A9764521357002005BD2E5 /* alpheios_16.pdf */,
+				78A9763D21356FD6005BD2E5 /* AlpheiosSafariV1.entitlements */,
+			);
+			path = AlpheiosSafariV1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A9761621356FB2005BD2E5 /* AlpheiosV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A9762521356FB3005BD2E5 /* Build configuration list for PBXNativeTarget "AlpheiosV1" */;
+			buildPhases = (
+				78A9761321356FB2005BD2E5 /* Sources */,
+				78A9761421356FB2005BD2E5 /* Frameworks */,
+				78A9761521356FB2005BD2E5 /* Resources */,
+				78A9764421356FD6005BD2E5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78A9763F21356FD6005BD2E5 /* PBXTargetDependency */,
+			);
+			name = AlpheiosV1;
+			productName = AlpheiosV1;
+			productReference = 78A9761721356FB2005BD2E5 /* AlpheiosV1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78A9762B21356FD6005BD2E5 /* AlpheiosSafariV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A9764121356FD6005BD2E5 /* Build configuration list for PBXNativeTarget "AlpheiosSafariV1" */;
+			buildPhases = (
+				78A9762821356FD6005BD2E5 /* Sources */,
+				78A9762921356FD6005BD2E5 /* Frameworks */,
+				78A9762A21356FD6005BD2E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlpheiosSafariV1;
+			productName = AlpheiosSafariV1;
+			productReference = 78A9762C21356FD6005BD2E5 /* AlpheiosSafariV1.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A9760F21356FB2005BD2E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Irina Sklyarova";
+				TargetAttributes = {
+					78A9761621356FB2005BD2E5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					78A9762B21356FD6005BD2E5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 78A9761221356FB2005BD2E5 /* Build configuration list for PBXProject "AlpheiosV1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A9760E21356FB2005BD2E5;
+			productRefGroup = 78A9761821356FB2005BD2E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A9761621356FB2005BD2E5 /* AlpheiosV1 */,
+				78A9762B21356FD6005BD2E5 /* AlpheiosSafariV1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A9761521356FB2005BD2E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A9761D21356FB3005BD2E5 /* Assets.xcassets in Resources */,
+				78A9762021356FB3005BD2E5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A9762A21356FD6005BD2E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A9763721356FD6005BD2E5 /* SafariExtensionViewController.xib in Resources */,
+				78A9764621357002005BD2E5 /* alpheios_16.pdf in Resources */,
+				78A9764821357615005BD2E5 /* Black_Cat_Vector.pdf in Resources */,
+				78A9763A21356FD6005BD2E5 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A9761321356FB2005BD2E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A9761B21356FB2005BD2E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A9762821356FD6005BD2E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A9763421356FD6005BD2E5 /* SafariExtensionViewController.swift in Sources */,
+				78A9763221356FD6005BD2E5 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78A9763F21356FD6005BD2E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78A9762B21356FD6005BD2E5 /* AlpheiosSafariV1 */;
+			targetProxy = 78A9763E21356FD6005BD2E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78A9761E21356FB3005BD2E5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A9761F21356FB3005BD2E5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		78A9763521356FD6005BD2E5 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A9763621356FD6005BD2E5 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78A9762321356FB3005BD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A9762421356FB3005BD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		78A9762621356FB3005BD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlpheiosV1/AlpheiosV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AlpheiosV1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		78A9762721356FB3005BD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlpheiosV1/AlpheiosV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AlpheiosV1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		78A9764221356FD6005BD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlpheiosSafariV1/AlpheiosSafariV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlpheiosSafariV1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV1.AlpheiosSafariV1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		78A9764321356FD6005BD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlpheiosSafariV1/AlpheiosSafariV1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlpheiosSafariV1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV1.AlpheiosSafariV1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A9761221356FB2005BD2E5 /* Build configuration list for PBXProject "AlpheiosV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A9762321356FB3005BD2E5 /* Debug */,
+				78A9762421356FB3005BD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A9762521356FB3005BD2E5 /* Build configuration list for PBXNativeTarget "AlpheiosV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A9762621356FB3005BD2E5 /* Debug */,
+				78A9762721356FB3005BD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A9764121356FD6005BD2E5 /* Build configuration list for PBXNativeTarget "AlpheiosSafariV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A9764221356FD6005BD2E5 /* Debug */,
+				78A9764321356FD6005BD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78A9760F21356FB2005BD2E5 /* Project object */;
+}
