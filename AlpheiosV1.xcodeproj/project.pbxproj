@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783F997A213FCB91005A5BF1 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 783F9979213FCB91005A5BF1 /* style.css */; };
 		78A9761B21356FB2005BD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9761A21356FB2005BD2E5 /* AppDelegate.swift */; };
 		78A9761D21356FB3005BD2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A9761C21356FB3005BD2E5 /* Assets.xcassets */; };
 		78A9762021356FB3005BD2E5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A9761E21356FB3005BD2E5 /* MainMenu.xib */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		783F9979213FCB91005A5BF1 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		783F997B213FD00A005A5BF1 /* script.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = script.js.map; sourceTree = "<group>"; };
 		78A9761721356FB2005BD2E5 /* AlpheiosV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpheiosV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A9761A21356FB2005BD2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A9761C21356FB3005BD2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				78A9763321356FD6005BD2E5 /* SafariExtensionViewController.swift */,
 				78A9763521356FD6005BD2E5 /* SafariExtensionViewController.xib */,
 				78A9763821356FD6005BD2E5 /* Info.plist */,
+				783F997B213FD00A005A5BF1 /* script.js.map */,
+				783F9979213FCB91005A5BF1 /* style.css */,
 				78A9763921356FD6005BD2E5 /* script.js */,
 				78A9764521357002005BD2E5 /* alpheios_16.pdf */,
 				78A9763D21356FD6005BD2E5 /* AlpheiosSafariV1.entitlements */,
@@ -228,6 +233,7 @@
 			files = (
 				78A9763721356FD6005BD2E5 /* SafariExtensionViewController.xib in Resources */,
 				78A9764621357002005BD2E5 /* alpheios_16.pdf in Resources */,
+				783F997A213FCB91005A5BF1 /* style.css in Resources */,
 				78A9764821357615005BD2E5 /* Black_Cat_Vector.pdf in Resources */,
 				78A9763A21356FD6005BD2E5 /* script.js in Resources */,
 			);
