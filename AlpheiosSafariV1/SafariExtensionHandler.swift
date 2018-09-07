@@ -10,10 +10,8 @@ import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
-    override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        if (messageName == "HelloBackground!") {
-            page.dispatchMessageToScript(withName: "helloFromBackground", userInfo: ["message": "testMessage"]);
-        }
+    override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String: Any]?) {
+        page.dispatchMessageToScript(withName: "helloFromBackground", userInfo: ["message": messageName, "type": "Alpheios_StateRequest", "body": userInfo]);
     }
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
