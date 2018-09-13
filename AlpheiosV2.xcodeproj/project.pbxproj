@@ -23,6 +23,7 @@
 		7832F8BD2147D9B900CD96CB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BC2147D9B900CD96CB /* Message.swift */; };
 		7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */; };
 		7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C02147E10500CD96CB /* StateRequest.swift */; };
+		7832F8C5214A5F9900CD96CB /* BackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		7832F8BC2147D9B900CD96CB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMessage.swift; sourceTree = "<group>"; };
 		7832F8C02147E10500CD96CB /* StateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRequest.swift; sourceTree = "<group>"; };
+		7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundProcess.swift; path = /Users/irinasklyarova/Desktop/Alpheios/V2/AlpheiosV2/AlpheiosSafariV2/BackgroundProcess.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				7832F8BB2147D8B300CD96CB /* messaging */,
 				7832F8B42147A52300CD96CB /* TabScript.swift */,
+				7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				7832F8A22147A4E400CD96CB /* SafariExtensionViewController.swift in Sources */,
 				7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */,
+				7832F8C5214A5F9900CD96CB /* BackgroundProcess.swift in Sources */,
 				7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */,
 				7832F8BD2147D9B900CD96CB /* Message.swift in Sources */,
 				7832F8A02147A4E400CD96CB /* SafariExtensionHandler.swift in Sources */,

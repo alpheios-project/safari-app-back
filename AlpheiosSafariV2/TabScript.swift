@@ -17,6 +17,7 @@ class TabScript {
     static let props: [String: String] = [
         "status_panel_open": "Alpheios_Status_PanelOpen",
         "status_panel_closed": "Alpheios_Status_PanelClosed",
+        "status_pending": "Alpheios_Status_Pending",
         "status_active": "Alpheios_Status_Active",
         "status_deactivated": "Alpheios_Status_Deactivated"
     ]
@@ -47,6 +48,12 @@ class TabScript {
     
     init(hashValue: Int) {
         self.ID = hashValue
+    }
+
+    static func createTabPending(hashValue: Int) -> TabScript {
+        let tab = TabScript(hashValue: hashValue)
+        tab.status = TabScript.props["status_pending"]!
+        return tab
     }
     
     func setPanelOpen() {

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AlpheiosV2.xcodeproj">
+      location = "group:/Users/irinasklyarova/Desktop/Alpheios/V2/AlpheiosV2/AlpheiosSafariV2/ContentProcess.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
