@@ -14,7 +14,10 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         page.getPropertiesWithCompletionHandler { properties in
-            print("recieved message \(messageName), userInfo \(userInfo)")
+            // print("recieved message \(messageName), userInfo \(userInfo)")
+            
+            let curTab = self.backgroundProcess.updateTabData(hashValue: page.hashValue, tabdata: userInfo, page: page)
+            // print("updatedTab \(curTab.convertForMessage())")
         }
     }
     
@@ -39,6 +42,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
         // This is called when Safari's state changed in some way that would require the extension's toolbar item to be validated again.
         validationHandler(true, "")
+        window.getActiveTab(completionHandler: { (activeTab) in
+            activeTab?.getActivePage(completionHandler: { (activePage) in
+                activePage?.getPropertiesWithCompletionHandler { properties in
+                    self.backgroundProcess.checkToolbarIcon(page: activePage!, window: window)
+                }
+            })
+        })
     }
     
     override func popoverViewController() -> SFSafariExtensionViewController {

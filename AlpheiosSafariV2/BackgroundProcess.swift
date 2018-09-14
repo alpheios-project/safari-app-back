@@ -13,7 +13,7 @@ class BackgroundProcess {
         "nonactive": "ToolbarItemIcon.pdf"
     ]
     
-    var tabs: [Int: TabScript] = [:]
+    static var tabs: [Int: TabScript] = [:]
     
     func updateIcon(active: Bool, window: SFSafariWindow) {
         window.getToolbarItem { toolbarItem in
@@ -28,17 +28,16 @@ class BackgroundProcess {
     }
     
     func getTabFromTabsByHash(hashValue: Int) -> TabScript {
-        if (self.tabs[hashValue] == nil) {
+        if (BackgroundProcess.tabs[hashValue] == nil) {
             let curPage = TabScript(hashValue: hashValue)
-            self.tabs[hashValue] = curPage
+            BackgroundProcess.tabs[hashValue] = curPage
         }
-        return self.tabs[hashValue]!
+        return BackgroundProcess.tabs[hashValue]!
     }
     
     func setContentState(tab: TabScript, page: SFSafariPage) {
         page.getPropertiesWithCompletionHandler { properties in
             let stateRequestMess = StateRequest(body: tab.convertForMessage())
-            // print(stateRequestMess.convertForMessage())
             page.dispatchMessageToScript(withName: "fromBackground", userInfo: stateRequestMess.convertForMessage())
         }
     }
@@ -71,6 +70,7 @@ class BackgroundProcess {
     
     func changeActiveTabStatus(page: SFSafariPage, window: SFSafariWindow) {
         let curTab = self.getTabFromTabsByHash(hashValue: (page.hashValue))
+
         curTab.changeActiveStatus()
         
         if (curTab.isActive) {
@@ -79,4 +79,36 @@ class BackgroundProcess {
             self.deactivateContent(tab: curTab, window: window)
         }
     }
+    
+    func updateTabData(hashValue: Int, tabdata: [String: Any]?, page: SFSafariPage) -> TabScript {
+        let curTab = self.getTabFromTabsByHash(hashValue: hashValue)
+        if let bodyUserInfo = tabdata?["body"] as? Dictionary<String, Any> {
+            
+            if (bodyUserInfo["status"] as! String == "Alpheios_Status_Pending" && curTab.isActive) {
+                self.reactivate(tab: curTab, page: page)
+            } else {
+                curTab.updateWithData(data: bodyUserInfo)
+            }
+
+        }
+        // print("curTab", curTab.convertForMessage())
+        return curTab
+    }
+    
+    func reactivate(tab: TabScript, page: SFSafariPage) {
+        self.setContentState(tab: tab, page: page)
+    }
+    
+    func checkToolbarIcon(page: SFSafariPage, window: SFSafariWindow) {
+        page.getPropertiesWithCompletionHandler { properties in
+            let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
+            if (curTab.isActive) {
+                self.updateIcon(active: true, window: window)
+            } else {
+                self.updateIcon(active: false, window: window)
+            }
+        }
+    }
+    
+    
 }

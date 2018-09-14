@@ -5,6 +5,7 @@
 //  Created by Irina Sklyarova on 11/09/2018.
 //  Copyright © 2018 Irina Sklyarova. All rights reserved.
 //
+import SafariServices
 
 class TabScript {
     var ID: Int
@@ -34,6 +35,12 @@ class TabScript {
         }
     }
     
+    var isPending: Bool {
+        get {
+            return self.status == TabScript.props["status_pending"]
+        }
+    }
+    
     var isPanelOpen: Bool {
         get {
             return self.panelStatus == TabScript.props["status_panel_open"]
@@ -46,14 +53,14 @@ class TabScript {
         }
     }
     
+    var isEmpty: Bool {
+        get {
+            return self.status == ""
+        }
+    }
+    
     init(hashValue: Int) {
         self.ID = hashValue
-    }
-
-    static func createTabPending(hashValue: Int) -> TabScript {
-        let tab = TabScript(hashValue: hashValue)
-        tab.status = TabScript.props["status_pending"]!
-        return tab
     }
     
     func setPanelOpen() {
@@ -91,8 +98,16 @@ class TabScript {
         ]
     }
     
-    func toString() -> String {
-        return "ID: \(self.ID), status: \(self.status), panelStatus: \(self.panelStatus), savedStatus: \(self.savedStatus), uiActive: \(self.uiActive)"
+    func updateWithData(data: Dictionary<String, Any>) {
+        if let status = data["status"] {
+            self.status = status as! String
+        }
+        if let panelStatus = data["panelStatus"] {
+            self.panelStatus = panelStatus as! String
+        }
+        if let tab = data["tab"] {
+            self.tab = tab as! String
+        }
     }
     
 }
