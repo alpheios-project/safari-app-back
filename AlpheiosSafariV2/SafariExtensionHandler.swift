@@ -13,12 +13,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        page.getPropertiesWithCompletionHandler { properties in
-            // print("recieved message \(messageName), userInfo \(userInfo)")
-            
-            let curTab = self.backgroundProcess.updateTabData(hashValue: page.hashValue, tabdata: userInfo, page: page)
-            // print("updatedTab \(curTab.convertForMessage())")
-        }
+
+        // print("recieved message \(messageName), userInfo \(userInfo)")
+        
+        let curTab = self.backgroundProcess.updateTabData(hashValue: page.hashValue, tabdata: userInfo, page: page)
+        // print("updatedTab \(curTab.convertForMessage())")
+
     }
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
@@ -51,6 +51,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         })
     }
     
+    override func validateContextMenuItem(withCommand command: String, in page: SFSafariPage, userInfo: [String : Any]? = nil, validationHandler: @escaping (Bool, String?) -> Void) {
+        // print("validateContextMenuItem start", page.hashValue)
+ 
+        // print("validateContextMenuItem inside")
+        let check = self.backgroundProcess.checkContextMenuIconVisibility(command: command, hashValue: page.hashValue)
+        // print("validateContextMenuItem", check)
+        validationHandler(!check, nil)
+
+    }
     override func popoverViewController() -> SFSafariExtensionViewController {
         return SafariExtensionViewController.shared
     }

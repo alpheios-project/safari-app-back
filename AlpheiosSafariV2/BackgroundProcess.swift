@@ -110,5 +110,14 @@ class BackgroundProcess {
         }
     }
     
-    
+    func checkContextMenuIconVisibility(command: String, hashValue: Int) -> Bool {
+        let activeContextItems = ["OpenPanel", "ShowInfo"]
+        
+        let curTab = self.getTabFromTabsByHash(hashValue: hashValue)
+        if activeContextItems.contains(command) {
+            return curTab.isActive
+        }
+            
+        return false
+    }
 }
