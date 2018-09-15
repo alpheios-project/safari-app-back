@@ -27,10 +27,28 @@
 		<key>SFSafariContextMenu</key>
 		<array>
 			<dict>
+				<key>Command</key>
+				<string>Activate</string>
+				<key>Text</key>
+				<string>Alpheios Activate</string>
+			</dict>
+			<dict>
+				<key>Command</key>
+				<string>Deactivate</string>
+				<key>Text</key>
+				<string>Alpheios Deactivate</string>
+			</dict>
+			<dict>
 				<key>Text</key>
 				<string>Alpheios Open Panel</string>
 				<key>Command</key>
 				<string>OpenPanel</string>
+			</dict>
+			<dict>
+				<key>Text</key>
+				<string>Alpheios Show Info</string>
+				<key>Command</key>
+				<string>ShowInfo</string>
 			</dict>
 		</array>
 		<key>SFSafariStyleSheet</key>

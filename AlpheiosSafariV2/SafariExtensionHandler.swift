@@ -16,7 +16,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
         // print("recieved message \(messageName), userInfo \(userInfo)")
         
-        let curTab = self.backgroundProcess.updateTabData(hashValue: page.hashValue, tabdata: userInfo, page: page)
+        _ = self.backgroundProcess.updateTabData(hashValue: page.hashValue, tabdata: userInfo, page: page)
         // print("updatedTab \(curTab.convertForMessage())")
 
     }
@@ -37,16 +37,25 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         if command == "OpenPanel" {
             self.backgroundProcess.openPanel(page: page)
         }
+        if command == "ShowInfo" {
+            self.backgroundProcess.showInfo(page: page)
+        }
+        if command == "Activate" {
+            self.backgroundProcess.activateContent(page: page)
+        }
+        if command == "Deactivate" {
+            self.backgroundProcess.deactivateContent(page: page)
+        }
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
         // This is called when Safari's state changed in some way that would require the extension's toolbar item to be validated again.
-        validationHandler(true, "")
+        // print("*********validate toolbar icon**************")
+        
         window.getActiveTab(completionHandler: { (activeTab) in
             activeTab?.getActivePage(completionHandler: { (activePage) in
-                activePage?.getPropertiesWithCompletionHandler { properties in
-                    self.backgroundProcess.checkToolbarIcon(page: activePage!, window: window)
-                }
+                self.backgroundProcess.checkToolbarIcon(page: activePage!, window: window)
+                validationHandler(true, "")
             })
         })
     }

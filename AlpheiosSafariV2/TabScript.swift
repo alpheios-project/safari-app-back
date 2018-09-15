@@ -70,6 +70,11 @@ class TabScript {
     func setPanelClosed() {
         self.panelStatus = TabScript.props["status_panel_closed"]!
     }
+    
+    func setShowInfo() {
+        self.panelStatus = TabScript.props["status_panel_open"]!
+        self.tab = "info"
+    }
 
     func activate() {
         self.status = TabScript.props["status_active"]!

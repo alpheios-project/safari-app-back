@@ -8,9 +8,9 @@
 import SafariServices
 
 class BackgroundProcess {
-    static let browserIcons: [String: String] = [
-        "active": "cat.pdf",
-        "nonactive": "ToolbarItemIcon.pdf"
+    static let browserIcons: [String: NSImage] = [
+        "active": NSImage.init(named: NSImage.Name(rawValue: "cat.pdf"))!,
+        "nonactive": NSImage.init(named: NSImage.Name(rawValue: "ToolbarItemIcon.pdf"))!
     ]
     
     static var tabs: [Int: TabScript] = [:]
@@ -23,7 +23,7 @@ class BackgroundProcess {
                 icon = BackgroundProcess.browserIcons["active"]
             }
             
-            toolbarItem?.setImage(NSImage.init(named: NSImage.Name(rawValue: icon!)))
+            toolbarItem?.setImage(icon)
         }
     }
     
@@ -36,10 +36,8 @@ class BackgroundProcess {
     }
     
     func setContentState(tab: TabScript, page: SFSafariPage) {
-        page.getPropertiesWithCompletionHandler { properties in
-            let stateRequestMess = StateRequest(body: tab.convertForMessage())
-            page.dispatchMessageToScript(withName: "fromBackground", userInfo: stateRequestMess.convertForMessage())
-        }
+        let stateRequestMess = StateRequest(body: tab.convertForMessage())
+        page.dispatchMessageToScript(withName: "fromBackground", userInfo: stateRequestMess.convertForMessage())
     }
     
     func activateContent(tab: TabScript, window: SFSafariWindow) {
@@ -51,6 +49,12 @@ class BackgroundProcess {
         })
     }
     
+   func activateContent(page: SFSafariPage) {
+        let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
+        curTab.activate()
+        self.setContentState(tab: curTab, page: page)
+    }
+    
     func deactivateContent(tab: TabScript, window: SFSafariWindow) {
         window.getActiveTab(completionHandler: { (activeTab) in
             activeTab?.getActivePage(completionHandler: { (activePage) in
@@ -60,10 +64,24 @@ class BackgroundProcess {
         })
     }
     
+    func deactivateContent(page: SFSafariPage) {
+        let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
+        curTab.deactivate()
+        self.setContentState(tab: curTab, page: page)
+    }
+    
     func openPanel(page: SFSafariPage) {
         let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
         if curTab.isActive {
             curTab.setPanelOpen()
+            self.setContentState(tab: curTab, page: page)
+        }
+    }
+    
+    func showInfo(page: SFSafariPage) {
+        let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
+        if curTab.isActive {
+            curTab.setShowInfo()
             self.setContentState(tab: curTab, page: page)
         }
     }
@@ -83,8 +101,7 @@ class BackgroundProcess {
     func updateTabData(hashValue: Int, tabdata: [String: Any]?, page: SFSafariPage) -> TabScript {
         let curTab = self.getTabFromTabsByHash(hashValue: hashValue)
         if let bodyUserInfo = tabdata?["body"] as? Dictionary<String, Any> {
-            
-            if (bodyUserInfo["status"] as! String == "Alpheios_Status_Pending" && curTab.isActive) {
+            if bodyUserInfo["status"] as! String != "Alpheios_Status_Active" && curTab.isActive {
                 self.reactivate(tab: curTab, page: page)
             } else {
                 curTab.updateWithData(data: bodyUserInfo)
@@ -100,22 +117,28 @@ class BackgroundProcess {
     }
     
     func checkToolbarIcon(page: SFSafariPage, window: SFSafariWindow) {
-        page.getPropertiesWithCompletionHandler { properties in
-            let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
-            if (curTab.isActive) {
-                self.updateIcon(active: true, window: window)
-            } else {
-                self.updateIcon(active: false, window: window)
-            }
+        let curTab = self.getTabFromTabsByHash(hashValue: page.hashValue)
+
+        if (curTab.isActive) {
+            self.updateIcon(active: true, window: window)
+        } else {
+            self.updateIcon(active: false, window: window)
         }
     }
     
     func checkContextMenuIconVisibility(command: String, hashValue: Int) -> Bool {
-        let activeContextItems = ["OpenPanel", "ShowInfo"]
-        
         let curTab = self.getTabFromTabsByHash(hashValue: hashValue)
-        if activeContextItems.contains(command) {
-            return curTab.isActive
+        if (command == "Activate" && !curTab.isActive) {
+            return true
+        }
+        if (command == "Deactivate" && curTab.isActive) {
+            return true
+        }
+        if (command == "OpenPanel" && curTab.isActive && !curTab.isPanelOpen) {
+            return true
+        }
+        if (command == "ShowInfo"  && curTab.isActive && !curTab.isPanelOpen) {
+            return true
         }
             
         return false
