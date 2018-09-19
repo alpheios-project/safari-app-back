@@ -40,5 +40,4 @@ toolbarItemClicked | This event is from toolbar icon clicked.
 contextMenuItemSelected | This event is from context menu item selected.
 validateToolbarItem | This event executes any time when the state of the toolbar icon could be changed.
 validateContextMenuItem | This event executes before context menu becomes visible.
- | 
 backgroundProcess | this is the variable for all alpheios custom background process (similiar to webextension background processes)
