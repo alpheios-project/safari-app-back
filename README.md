@@ -64,3 +64,11 @@ updateTabData | It overchecks the data for the current tab, defines if it needed
 reactivate | Sends the current saved state from the background to front.
 checkToolbarIcon | Updates the toolbar icon (is used on reloading a page)
 checkContextMenuIconVisibility | Checks the visibility of all context menu items according to the tab state
+
+### TabScript.swift
+
+This is the class object for saving data about the tab.
+
+### Message.swift, RequestMessage.swift, StateRequest.swift
+
+This is the class objects for converting data to message.
