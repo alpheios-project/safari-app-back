@@ -27,3 +27,18 @@ SFSafariWebsiteAccess | It is for defining the access from tabs (I am using simp
 ### script.js, script.map.js, style.css
 
 It is compiled data from [safari-app-front repo](https://github.com/alpheios-project/safari-app-front)
+
+### SafariExtensionHandler.swift ([apple doc](https://developer.apple.com/documentation/safariservices/sfsafariextensionhandler))
+
+The main file in Safari app extension structure.
+There are all events comming from js part here.
+
+Name | Description
+------------ | -------------
+messageReceived | This event executes on getting message from the injected js file.
+toolbarItemClicked | This event is from toolbar icon clicked.
+contextMenuItemSelected | This event is from context menu item selected.
+validateToolbarItem | This event executes any time when the state of the toolbar icon could be changed.
+validateContextMenuItem | This event executes before context menu becomes visible.
+|
+backgroundProcess | this is the variable for all alpheios custom background process (similiar to webextension background processes)
