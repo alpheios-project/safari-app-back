@@ -28,7 +28,7 @@ SFSafariWebsiteAccess | It is for defining the access from tabs (I am using simp
 
 It is compiled data from [safari-app-front repo](https://github.com/alpheios-project/safari-app-front)
 
-(safari-schema.png)
+![Screenshot](safari-schema.png)
 
 ### SafariExtensionHandler.swift ([apple doc](https://developer.apple.com/documentation/safariservices/sfsafariextensionhandler))
 
