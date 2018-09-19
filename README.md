@@ -41,3 +41,26 @@ contextMenuItemSelected | This event is from context menu item selected.
 validateToolbarItem | This event executes any time when the state of the toolbar icon could be changed.
 validateContextMenuItem | This event executes before context menu becomes visible.
 backgroundProcess | this is the variable for all alpheios custom background process (similiar to webextension background processes)
+
+### BackgroundProcess.swift
+
+This is the main file for all background process similiar to the webextension version
+
+Name | Description
+------------ | -------------
+browserIcons | This is the dictionary with browser icons (name: image).
+tabs | This is the dictionary with tabs data registered in the extension (hashValue: TabScript object).
+updateIcon | It changes icon for the toolbar
+getTabFromTabsByHash | It creates a new tab in tabs dictionary or extracts the exists by hashValue
+setContentState | It sends the stateRequestMessage to the js file
+activateContent (with window in params) | It defines the current activePage from window, sends the state to the front and sets icon to active. It is used from changeActiveTabStatus.
+activateContent (without window in params) | It defines the current activePage from window, changes the state of the tab to the active and sends the state to the front. It is used from contextMenuItemSelected.
+deactivateContent (with window in params) | It defines the current activePage from window, sends the state to the front and sets icon to nonactive. It is used from changeActiveTabStatus.
+deactivateContent (without window in params) | It defines the current activePage from window, changes the state of the tab to the nonactive  and sends the state to the front. It is used from contextMenuItemSelected
+openPanel | it changes the state of the panel in the current tab and sends the state to the front. It is used from changeActiveTabStatus.
+showInfo | it checks the state of the panel in the current tab (changes it if needed), changes the tab and sends the state to the front. It is used from changeActiveTabStatus.
+changeActiveTabStatus | It changes the state of the current tab to the opposite. Used from toolbarItemClicked.
+updateTabData | It overchecks the data for the current tab, defines if it needed to be reactivated or simply updated.
+reactivate | Sends the current saved state from the background to front.
+checkToolbarIcon | Updates the toolbar icon (is used on reloading a page)
+checkContextMenuIconVisibility | Checks the visibility of all context menu items according to the tab state
