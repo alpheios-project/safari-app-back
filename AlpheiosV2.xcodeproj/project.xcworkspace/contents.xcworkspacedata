@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/irinasklyarova/Desktop/Alpheios/V2/AlpheiosV2/AlpheiosSafariV2/ContentProcess.swift">
+      location = "group:../AlpheiosV2">
    </FileRef>
    <FileRef
       location = "self:">

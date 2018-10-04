@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7832F8892147A4CC00CD96CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8882147A4CC00CD96CB /* AppDelegate.swift */; };
-		7832F88B2147A4CC00CD96CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7832F88A2147A4CC00CD96CB /* Assets.xcassets */; };
-		7832F88E2147A4CC00CD96CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7832F88C2147A4CC00CD96CB /* MainMenu.xib */; };
 		7832F89D2147A4E400CD96CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7832F89C2147A4E400CD96CB /* Cocoa.framework */; };
 		7832F8A02147A4E400CD96CB /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F89F2147A4E400CD96CB /* SafariExtensionHandler.swift */; };
 		7832F8A22147A4E400CD96CB /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8A12147A4E400CD96CB /* SafariExtensionViewController.swift */; };
 		7832F8A52147A4E400CD96CB /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8A32147A4E400CD96CB /* SafariExtensionViewController.xib */; };
 		7832F8A82147A4E400CD96CB /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8A72147A4E400CD96CB /* script.js */; };
-		7832F8AA2147A4E400CD96CB /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8A92147A4E400CD96CB /* ToolbarItemIcon.pdf */; };
 		7832F8AE2147A4E400CD96CB /* AlpheiosSafariV2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7832F89A2147A4E400CD96CB /* AlpheiosSafariV2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7832F8B52147A52300CD96CB /* TabScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8B42147A52300CD96CB /* TabScript.swift */; };
 		7832F8B82147A70300CD96CB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8B72147A70300CD96CB /* style.css */; };
-		7832F8BA2147AD0B00CD96CB /* cat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8B92147AD0A00CD96CB /* cat.pdf */; };
 		7832F8BD2147D9B900CD96CB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BC2147D9B900CD96CB /* Message.swift */; };
 		7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */; };
 		7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C02147E10500CD96CB /* StateRequest.swift */; };
-		7832F8C5214A5F9900CD96CB /* BackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */; };
+		ADE17F052163CA2500D014CE /* BackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17F042163CA2500D014CE /* BackgroundProcess.swift */; };
+		ADE17F07216699B000D014CE /* alpheios.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADE17F06216699B000D014CE /* alpheios.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +48,6 @@
 
 /* Begin PBXFileReference section */
 		7832F8852147A4CC00CD96CB /* AlpheiosV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlpheiosV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7832F8882147A4CC00CD96CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7832F88A2147A4CC00CD96CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7832F88D2147A4CC00CD96CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7832F88F2147A4CC00CD96CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7832F8902147A4CC00CD96CB /* AlpheiosV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlpheiosV2.entitlements; sourceTree = "<group>"; };
 		7832F89A2147A4E400CD96CB /* AlpheiosSafariV2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlpheiosSafariV2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7832F89C2147A4E400CD96CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7832F89F2147A4E400CD96CB /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
@@ -64,16 +55,15 @@
 		7832F8A42147A4E400CD96CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		7832F8A62147A4E400CD96CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7832F8A72147A4E400CD96CB /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		7832F8A92147A4E400CD96CB /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		7832F8AB2147A4E400CD96CB /* AlpheiosSafariV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlpheiosSafariV2.entitlements; sourceTree = "<group>"; };
 		7832F8B42147A52300CD96CB /* TabScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScript.swift; sourceTree = "<group>"; };
 		7832F8B62147A70300CD96CB /* script.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = script.js.map; sourceTree = "<group>"; };
 		7832F8B72147A70300CD96CB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		7832F8B92147AD0A00CD96CB /* cat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cat.pdf; sourceTree = "<group>"; };
 		7832F8BC2147D9B900CD96CB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMessage.swift; sourceTree = "<group>"; };
 		7832F8C02147E10500CD96CB /* StateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRequest.swift; sourceTree = "<group>"; };
-		7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundProcess.swift; path = /Users/irinasklyarova/Desktop/Alpheios/V2/AlpheiosV2/AlpheiosSafariV2/BackgroundProcess.swift; sourceTree = "<absolute>"; };
+		ADE17F042163CA2500D014CE /* BackgroundProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundProcess.swift; sourceTree = "<group>"; };
+		ADE17F06216699B000D014CE /* alpheios.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = alpheios.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +88,6 @@
 		7832F87C2147A4CC00CD96CB = {
 			isa = PBXGroup;
 			children = (
-				7832F8872147A4CC00CD96CB /* AlpheiosV2 */,
 				7832F89E2147A4E400CD96CB /* AlpheiosSafariV2 */,
 				7832F89B2147A4E400CD96CB /* Frameworks */,
 				7832F8862147A4CC00CD96CB /* Products */,
@@ -114,18 +103,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7832F8872147A4CC00CD96CB /* AlpheiosV2 */ = {
-			isa = PBXGroup;
-			children = (
-				7832F8882147A4CC00CD96CB /* AppDelegate.swift */,
-				7832F88A2147A4CC00CD96CB /* Assets.xcassets */,
-				7832F88C2147A4CC00CD96CB /* MainMenu.xib */,
-				7832F88F2147A4CC00CD96CB /* Info.plist */,
-				7832F8902147A4CC00CD96CB /* AlpheiosV2.entitlements */,
-			);
-			path = AlpheiosV2;
-			sourceTree = "<group>";
-		};
 		7832F89B2147A4E400CD96CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,16 +114,16 @@
 		7832F89E2147A4E400CD96CB /* AlpheiosSafariV2 */ = {
 			isa = PBXGroup;
 			children = (
+				ADE17F06216699B000D014CE /* alpheios.pdf */,
+				ADE17F042163CA2500D014CE /* BackgroundProcess.swift */,
 				7832F8B32147A50A00CD96CB /* lib */,
 				7832F89F2147A4E400CD96CB /* SafariExtensionHandler.swift */,
-				7832F8B92147AD0A00CD96CB /* cat.pdf */,
 				7832F8A12147A4E400CD96CB /* SafariExtensionViewController.swift */,
 				7832F8B62147A70300CD96CB /* script.js.map */,
 				7832F8A32147A4E400CD96CB /* SafariExtensionViewController.xib */,
 				7832F8B72147A70300CD96CB /* style.css */,
 				7832F8A62147A4E400CD96CB /* Info.plist */,
 				7832F8A72147A4E400CD96CB /* script.js */,
-				7832F8A92147A4E400CD96CB /* ToolbarItemIcon.pdf */,
 				7832F8AB2147A4E400CD96CB /* AlpheiosSafariV2.entitlements */,
 			);
 			path = AlpheiosSafariV2;
@@ -157,7 +134,6 @@
 			children = (
 				7832F8BB2147D8B300CD96CB /* messaging */,
 				7832F8B42147A52300CD96CB /* TabScript.swift */,
-				7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -253,8 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7832F88B2147A4CC00CD96CB /* Assets.xcassets in Resources */,
-				7832F88E2147A4CC00CD96CB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7832F8AA2147A4E400CD96CB /* ToolbarItemIcon.pdf in Resources */,
-				7832F8BA2147AD0B00CD96CB /* cat.pdf in Resources */,
 				7832F8B82147A70300CD96CB /* style.css in Resources */,
+				ADE17F07216699B000D014CE /* alpheios.pdf in Resources */,
 				7832F8A52147A4E400CD96CB /* SafariExtensionViewController.xib in Resources */,
 				7832F8A82147A4E400CD96CB /* script.js in Resources */,
 			);
@@ -277,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7832F8892147A4CC00CD96CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7832F8A22147A4E400CD96CB /* SafariExtensionViewController.swift in Sources */,
+				ADE17F052163CA2500D014CE /* BackgroundProcess.swift in Sources */,
 				7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */,
-				7832F8C5214A5F9900CD96CB /* BackgroundProcess.swift in Sources */,
 				7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */,
 				7832F8BD2147D9B900CD96CB /* Message.swift in Sources */,
 				7832F8A02147A4E400CD96CB /* SafariExtensionHandler.swift in Sources */,
@@ -306,14 +278,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7832F88C2147A4CC00CD96CB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7832F88D2147A4CC00CD96CB /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		7832F8A32147A4E400CD96CB /* SafariExtensionViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
