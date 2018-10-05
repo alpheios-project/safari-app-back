@@ -9,8 +9,8 @@ import SafariServices
 
 class BackgroundProcess {
     static let browserIcons: [String: NSImage] = [
-        "active": NSImage.init(named: NSImage.Name(rawValue: "cat.pdf"))!,
-        "nonactive": NSImage.init(named: NSImage.Name(rawValue: "ToolbarItemIcon.pdf"))!
+        "active": NSImage.init(named: "alpheios.pdf")!,
+        "nonactive": NSImage.init(named: "alpheios.pdf")!
     ]
     
     static var tabs: [Int: TabScript] = [:]
@@ -21,6 +21,11 @@ class BackgroundProcess {
             
             if (active) {
                 icon = BackgroundProcess.browserIcons["active"]
+                toolbarItem?.setBadgeText("-")
+                toolbarItem?.setLabel("Deactivate Alpheios")
+            } else {
+                toolbarItem?.setBadgeText("+")
+                toolbarItem?.setLabel("Activate Alpheios")
             }
             
             toolbarItem?.setImage(icon)

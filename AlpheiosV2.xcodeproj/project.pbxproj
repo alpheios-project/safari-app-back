@@ -24,6 +24,7 @@
 		7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */; };
 		7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C02147E10500CD96CB /* StateRequest.swift */; };
 		7832F8C5214A5F9900CD96CB /* BackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */; };
+		78F00C7421674A0D008F32C1 /* alpheios.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78F00C7321674A0D008F32C1 /* alpheios.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMessage.swift; sourceTree = "<group>"; };
 		7832F8C02147E10500CD96CB /* StateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRequest.swift; sourceTree = "<group>"; };
 		7832F8C4214A5F9900CD96CB /* BackgroundProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundProcess.swift; path = /Users/irinasklyarova/Desktop/Alpheios/V2/AlpheiosV2/AlpheiosSafariV2/BackgroundProcess.swift; sourceTree = "<absolute>"; };
+		78F00C7321674A0D008F32C1 /* alpheios.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = alpheios.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		7832F89E2147A4E400CD96CB /* AlpheiosSafariV2 */ = {
 			isa = PBXGroup;
 			children = (
+				78F00C7321674A0D008F32C1 /* alpheios.pdf */,
 				7832F8B32147A50A00CD96CB /* lib */,
 				7832F89F2147A4E400CD96CB /* SafariExtensionHandler.swift */,
 				7832F8B92147AD0A00CD96CB /* cat.pdf */,
@@ -223,9 +226,11 @@
 				TargetAttributes = {
 					7832F8842147A4CC00CD96CB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					7832F8992147A4E400CD96CB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -265,6 +270,7 @@
 				7832F8AA2147A4E400CD96CB /* ToolbarItemIcon.pdf in Resources */,
 				7832F8BA2147AD0B00CD96CB /* cat.pdf in Resources */,
 				7832F8B82147A70300CD96CB /* style.css in Resources */,
+				78F00C7421674A0D008F32C1 /* alpheios.pdf in Resources */,
 				7832F8A52147A4E400CD96CB /* SafariExtensionViewController.xib in Resources */,
 				7832F8A82147A4E400CD96CB /* script.js in Resources */,
 			);
@@ -453,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -472,7 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -490,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV2.AlpheiosSafariV2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -508,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.irina-sklyarova.AlpheiosV2.AlpheiosSafariV2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
