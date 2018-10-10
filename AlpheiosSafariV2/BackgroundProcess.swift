@@ -9,8 +9,8 @@ import SafariServices
 
 class BackgroundProcess {
     static let browserIcons: [String: NSImage] = [
-        "active": NSImage.init(named: NSImage.Name(rawValue: "cat.pdf"))!,
-        "nonactive": NSImage.init(named: NSImage.Name(rawValue: "ToolbarItemIcon.pdf"))!
+        "active": NSImage.init(named: "cat.pdf")!,
+        "nonactive": NSImage.init(named: "ToolbarItemIcon.pdf")!
     ]
     
     static var tabs: [Int: TabScript] = [:]
