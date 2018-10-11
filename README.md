@@ -81,7 +81,7 @@ This is the class objects for converting data to message.
 1. Open the Xcode project files. Those files are located in a directory with a `.xcodeproj` extension.
 2. Select an active scheme to use. A scheme selector is located near a run button in a toolbar. Please read more on 
 schemes below.
-2. Run the build. If necessary, a build will be compiled before running automatically.
+2. Run the build.
 3. Open a Safari browser.
 4. Check **Allow Unsigned Extensions** in a **Develop** menu.
 5. Go to **Preferences** -> **Extensions** and check a box against an extension name.
