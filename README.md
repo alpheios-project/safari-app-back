@@ -74,3 +74,32 @@ This is the class object for saving data about the tab.
 ### Message.swift, RequestMessage.swift, StateRequest.swift
 
 This is the class objects for converting data to message.
+
+## Developer info
+
+### Running an app extension from Xcode
+1. Open the Xcode project files. Those files are located in a directory with a `.xcodeproj` extension.
+2. Select an active scheme to use. A scheme selector is located near a run button in a toolbar. Please read more on 
+schemes below.
+2. Run the build. If necessary, a build will be compiled before running automatically.
+3. Open a Safari browser.
+4. Check **Allow Unsigned Extensions** in a **Develop** menu.
+5. Go to **Preferences** -> **Extensions** and check a box against an extension name.
+6. Reload the page. Safari app extension should be fully functional at this moment.
+
+### Schema selection for running an extension
+Safari app extension is stored within a hosting macOS app. So the one way to run it is to run a corresponding
+macOS app. For this, choose an **AlpheiosV2** app schema marked with a stylized letter **A** (meaning application).
+
+The other way is to run a Safari app extension directly. For this, an **AlpheiosSafariV2** schema shall be used.
+It is marked with a blue letter **E** (meaning extension) inside a white circle. It will ask what app
+should it run. Choose **Safari** from the list of apps offered. An instance of Safari web browser will
+open. In the browser, allow unsigned extensions and activate an Alpheios extension by checking a box
+next to its name as described in **How to run from XCode** section.
+
+Using an app extension schema to run an extension will allow to attach debugger to a running extension and monitor it in
+real time.
+
+### Troubleshooting
+If Safari does not see an app extension or it fails in some other way, close Safari, restart XCode
+and repeat all steps from the beginning.
