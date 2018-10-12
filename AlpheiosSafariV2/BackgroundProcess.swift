@@ -21,10 +21,10 @@ class BackgroundProcess {
             
             if (active) {
                 icon = BackgroundProcess.browserIcons["active"]
-                toolbarItem?.setBadgeText("-")
+                toolbarItem?.setBadgeText("\u{1f4d6}") // Open book icon
                 toolbarItem?.setLabel("Deactivate Alpheios")
             } else {
-                toolbarItem?.setBadgeText("+")
+                toolbarItem?.setBadgeText("")
                 toolbarItem?.setLabel("Activate Alpheios")
             }
             
