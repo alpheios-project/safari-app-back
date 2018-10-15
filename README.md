@@ -101,5 +101,11 @@ Using an app extension schema to run an extension will allow to attach debugger 
 real time.
 
 ### Troubleshooting
+
+#### Running a Safari App Extension within a macOS app
+If Safari does not see an app extension, try to clean a build directory (**Product**->**Clean Build Folder**) 
+and run **Build** again.
+
+#### Running a Safari App Extension Directly
 If Safari does not see an app extension or it fails in some other way, close Safari, restart XCode
 and repeat all steps from the beginning.

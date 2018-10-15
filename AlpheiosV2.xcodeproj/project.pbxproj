@@ -14,16 +14,16 @@
 		7832F8A02147A4E400CD96CB /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F89F2147A4E400CD96CB /* SafariExtensionHandler.swift */; };
 		7832F8A22147A4E400CD96CB /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8A12147A4E400CD96CB /* SafariExtensionViewController.swift */; };
 		7832F8A52147A4E400CD96CB /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8A32147A4E400CD96CB /* SafariExtensionViewController.xib */; };
-		7832F8A82147A4E400CD96CB /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8A72147A4E400CD96CB /* script.js */; };
 		7832F8AE2147A4E400CD96CB /* AlpheiosSafariV2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7832F89A2147A4E400CD96CB /* AlpheiosSafariV2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7832F8B52147A52300CD96CB /* TabScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8B42147A52300CD96CB /* TabScript.swift */; };
-		7832F8B82147A70300CD96CB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7832F8B72147A70300CD96CB /* style.css */; };
 		7832F8BD2147D9B900CD96CB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BC2147D9B900CD96CB /* Message.swift */; };
 		7832F8BF2147DB7C00CD96CB /* RequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */; };
 		7832F8C12147E10500CD96CB /* StateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F8C02147E10500CD96CB /* StateRequest.swift */; };
 		7832F8C5214A5F9900CD96CB /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BF3927F9216F565E00213E05 /* alpheios.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BF3927F8216F565E00213E05 /* alpheios.pdf */; };
 		BF9D4CB1216E0D4E00E03D0C /* BackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D4CB0216E0D4E00E03D0C /* BackgroundProcess.swift */; };
+		BF9F18B82170EF5A00DD595F /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = BF9F18B72170EF5A00DD595F /* style.css */; };
+		BF9F18BB2170F01100DD595F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = BF9F18BA2170F01100DD595F /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,17 +63,19 @@
 		7832F8A12147A4E400CD96CB /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		7832F8A42147A4E400CD96CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		7832F8A62147A4E400CD96CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7832F8A72147A4E400CD96CB /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		7832F8AB2147A4E400CD96CB /* AlpheiosSafariV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlpheiosSafariV2.entitlements; sourceTree = "<group>"; };
 		7832F8B42147A52300CD96CB /* TabScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScript.swift; sourceTree = "<group>"; };
 		7832F8B62147A70300CD96CB /* script.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = script.js.map; sourceTree = "<group>"; };
-		7832F8B72147A70300CD96CB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		7832F8BC2147D9B900CD96CB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7832F8BE2147DB7C00CD96CB /* RequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMessage.swift; sourceTree = "<group>"; };
 		7832F8C02147E10500CD96CB /* StateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRequest.swift; sourceTree = "<group>"; };
 		BF3927F8216F565E00213E05 /* alpheios.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = alpheios.pdf; sourceTree = "<group>"; };
 		BF4FB089216E130B004E2592 /* TabScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabScript.swift; sourceTree = "<group>"; };
 		BF9D4CB0216E0D4E00E03D0C /* BackgroundProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundProcess.swift; sourceTree = "<group>"; };
+		BF9F18B72170EF5A00DD595F /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = "../../safari-app-front/dist/style/style.css"; sourceTree = "<group>"; };
+		BF9F18B92170EF6900DD595F /* style.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = style.css.map; path = "../../safari-app-front/dist/style/style.css.map"; sourceTree = "<group>"; };
+		BF9F18BA2170F01100DD595F /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = script.js; path = "../../safari-app-front/dist/script.js"; sourceTree = "<group>"; };
+		BF9F18BC2170F4FC00DD595F /* script.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = script.js.map; path = "../../safari-app-front/dist/script.js.map"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +146,11 @@
 				7832F8B62147A70300CD96CB /* script.js.map */,
 				7832F8A32147A4E400CD96CB /* SafariExtensionViewController.xib */,
 				BF4FB089216E130B004E2592 /* TabScript.swift */,
-				7832F8B72147A70300CD96CB /* style.css */,
 				7832F8A62147A4E400CD96CB /* Info.plist */,
-				7832F8A72147A4E400CD96CB /* script.js */,
+				BF9F18B72170EF5A00DD595F /* style.css */,
+				BF9F18B92170EF6900DD595F /* style.css.map */,
+				BF9F18BA2170F01100DD595F /* script.js */,
+				BF9F18BC2170F4FC00DD595F /* script.js.map */,
 				BF3927F8216F565E00213E05 /* alpheios.pdf */,
 				7832F8AB2147A4E400CD96CB /* AlpheiosSafariV2.entitlements */,
 			);
@@ -269,10 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7832F8B82147A70300CD96CB /* style.css in Resources */,
 				BF3927F9216F565E00213E05 /* alpheios.pdf in Resources */,
+				BF9F18BB2170F01100DD595F /* script.js in Resources */,
+				BF9F18B82170EF5A00DD595F /* style.css in Resources */,
 				7832F8A52147A4E400CD96CB /* SafariExtensionViewController.xib in Resources */,
-				7832F8A82147A4E400CD96CB /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
